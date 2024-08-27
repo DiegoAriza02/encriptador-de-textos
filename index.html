@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+<body>
+    <header>
+
+        <h1>Encriptador de Textos</h1>
+    </header>
+
+    <main class="container">
+        <section class="input-section">
+            <textarea id="input-text" placeholder="Introduce el texto aquí..." maxlength="500"></textarea>
+            <div class="buttons">
+                <button onclick="encriptar()">Encriptar</button>
+                <button onclick="desencriptar()">Desencriptar</button>
+            </div>
+        </section>
+        
+        <section class="output-section">
+            <textarea id="output-text" readonly placeholder="El texto encriptado aparecerá aquí..."></textarea>
+            <button class="copy-btn" onclick="copiar()">Copiar</button>
+        </section>
+    </main>
+   <div class="iconos-redes"> 
+        <a href="https://www.facebook.com/Diegoariza30/" target="_blank" class="btn_facebook">
+            <img src="../img/logo-facebook.png" id="logo"></a>
+        <a href="https://www.instagram.com/diego_ariza_02/" target="_blank" class="btn_instagram">
+            <img src="../img/logo-insta.png" id="logo">
+        </a>
+        <a href="https://www.aluracursos.com/cursos" target="_blank" class="btn_alura">
+            <img src="../img/logo-alura.png" id="logo">
+        </a>
+    </div>
+
+    <script src="script.js"></script>
+   
+</body>
+</html>
